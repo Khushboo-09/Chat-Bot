@@ -1,0 +1,222 @@
+/* css reset */
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.3;
+}
+
+/* Navigation Bar: Logo and Image */
+/* #logo{
+    margin: 16px 34px;
+}
+#logo img{
+    height: 59px;
+    margin:3px 6px;
+} */
+#logo-title{
+    margin:16px 20px;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    color:rgb(104, 53, 53)
+    }
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 0px 6px;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding:3px 22px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover,#navbar ul li a.active{
+    color: black;
+    background-color: white;
+   
+}
+/* Home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 394px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('food-site-images/bg3.jpg') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    color: brown;
+
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    color: brown;
+
+}
+
+/* services section */
+#services{
+    margin:34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 25px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    transition-property: box-shadow;
+
+
+}
+#services .box:hover{
+    box-shadow:5px 5px 10px 20px #a86363;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+/* Client section */
+#client-section{
+    position: relative;
+    /* height: 245px; */
+    /* border: 2px solid #a86363; */
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('food-site-images/fruits.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* Contect seciton */
+#contact{
+    margin-top:48px;
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    background: url('food-site-images/phone.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+}
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background-color: #a86363;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 2.3rem;
+    padding:12px;
+    
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    color:white;
+    background-color:rgb(54 35 35);
+    padding:6px 20px;
+    margin:17px;
+    border:2px solid white;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color:rgb(54 35 35);
+    background-color: white;
+    border:2px solid rgb(54 35 35)
+}
+.center{
+    text-align: center;
+}

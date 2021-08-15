@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food!e</title>
+    <link rel="stylesheet"  href="food-siteCSS.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+</head>
+<body>
+<nav id="navbar">
+    <!-- <div id="logo">
+        <img src="food-site-images/logo.jpg" alt="MyOnlineMeal.com">
+    </div> -->
+    <div id = "logo-title">Food!e</div>
+    <ul>
+        <li class="item" ><a href="#home"class="active">Home</a></li>
+        <li class="item"><a href="#services-container">Services</a></li>
+        <li class="item"><a href="#client-section">Clients</a></li>
+        <li class="item"><a href="#contact">Contact us</a></li>
+    </ul>
+</nav>
+<section id="home">
+    <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error animi veritatis quo. Recusandae, sapiente enim!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error animi veritatis quo. </p>
+    <button class="btn">Order Now</button>
+</section>
+<section id="services-container">
+    <h1 class="h-primary center">Our Services</h1> 
+    <div id="services">
+        <div class="box">
+            <img src="food-site-images\pizza2.png" alt="Pizza image">
+            <h2 class="h-secondary center">Food Catering</h2>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                voluptas beatae facilis labore, omnis sint quae eum.</p>
+        </div>
+        <div class="box">
+            <img src="food-site-images\bulk.png" alt="">
+            <h2 class="h-secondary center">Bulk Ordering</h2>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+                sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                voluptas beatae facilis labore, omnis sint quae eum.</p>
+        </div>
+        <div class="box">
+            <img src="food-site-images\delivery.png" alt="">
+            <h2 class="h-secondary center">Food Delivering</h2>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                voluptas beatae facilis labore, omnis sint quae eum.</p>
+        </div>
+    </div>
+</section>
+<section id="client-section">
+  <h1 class="h-primary center">Our Clients</h1>  
+  <div id="clients">
+      <div class="client-items">
+          <img src="food-site-images\appleLogo.png" alt="Apple logo">
+      </div>
+      <div class="client-items">
+        <img src="food-site-images\hpLogo.png" alt="Apple logo">
+    </div>
+    <div class="client-items">
+        <img src="food-site-images\microsoftLogo.png" alt="Apple logo">
+    </div>
+    <div class="client-items">
+        <img src="food-site-images\skypeLogo.png" alt="Apple logo">
+    </div>
+  </div>
+</section>
+<section id="contact">
+    <h1 class="h-primary center">Contact Us</h1>
+    <div id="contact-box">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name=name id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name=email id="email" placeholder="Enter Your email">
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="phone" name=phone-number id="phone-number" placeholder="Enter Your phone-number">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" name=location id="location" placeholder="Enter Your location">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea type="text" name=message id="message" placeholder="Enter Your message"></textarea>
+            </div>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="center">
+        Copyright &copy; www.MyOnlineMeal.com. All rights reserved.
+    </div>
+</footer>
+</body>
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "1bc9d8e1-9824-4a32-b652-48d69c630c3f", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "2d732e3a-354a-47ab-b0c8-eff38a0bd685", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</html>
